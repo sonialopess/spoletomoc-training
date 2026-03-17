@@ -1,0 +1,249 @@
+import React, { useState, useEffect } from 'react';
+import { quizQuestions } from '../data/quizQuestions';
+import '../styles/QuizPage.css';
+
+export default function QuizPage({ userName, onBack }) {
+  const [questions, setQuestions] = useState([]);
+  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
+  const [answers, setAnswers] = useState({});
+  const [showResults, setShowResults] = useState(false);
+  const [score, setScore] = useState(0);
+
+  useEffect(() => {
+    // Selecionar 10 perguntas aleatórias
+    const shuffled = [...quizQuestions].sort(() => Math.random() - 0.5);
+    setQuestions(shuffled.slice(0, 10));
+  }, []);
+
+  if (questions.length === 0) {
+    return <div className="loading">Carregando quiz...</div>;
+  }
+
+  const currentQuestion = questions[currentQuestionIndex];
+  const isAnswered = answers[currentQuestionIndex] !== undefined;
+
+  const handleAnswer = (selectedIndex) => {
+    setAnswers({
+      ...answers,
+      [currentQuestionIndex]: selectedIndex,
+    });
+  };
+
+  const handleNext = () => {
+    if (currentQuestionIndex < questions.length - 1) {
+      setCurrentQuestionIndex(currentQuestionIndex + 1);
+      window.scrollTo(0, 0);
+    }
+  };
+
+  const handlePrevious = () => {
+    if (currentQuestionIndex > 0) {
+      setCurrentQuestionIndex(currentQuestionIndex - 1);
+      window.scrollTo(0, 0);
+    }
+  };
+
+  const handleFinish = () => {
+    // Calcular pontuação
+    let correctAnswers = 0;
+    questions.forEach((question, index) => {
+      if (answers[index] === question.correctAnswer) {
+        correctAnswers++;
+      }
+    });
+    setScore(correctAnswers);
+    setShowResults(true);
+    window.scrollTo(0, 0);
+  };
+
+  if (showResults) {
+    return (
+      <ResultsPage
+        userName={userName}
+        score={score}
+        totalQuestions={questions.length}
+        onBack={onBack}
+        onRetry={() => {
+          setCurrentQuestionIndex(0);
+          setAnswers({});
+          setShowResults(false);
+          const shuffled = [...quizQuestions].sort(() => Math.random() - 0.5);
+          setQuestions(shuffled.slice(0, 10));
+        }}
+      />
+    );
+  }
+
+  const percentage = ((currentQuestionIndex + 1) / questions.length) * 100;
+
+  return (
+    <div className="quiz-page">
+      <div className="container">
+        <div className="quiz-header">
+          <button onClick={onBack} className="btn-back">← Voltar</button>
+          <h1>Quiz de Receitas</h1>
+          <p className="user-greeting">{userName}</p>
+        </div>
+
+        <div className="progress-bar">
+          <div
+            className="progress-fill"
+            style={{ width: `${percentage}%` }}
+          ></div>
+        </div>
+
+        <div className="question-counter">
+          Pergunta {currentQuestionIndex + 1} de {questions.length}
+        </div>
+
+        <div className="question-card">
+          <h2 className="question-text">{currentQuestion.question}</h2>
+
+          <div className="options-container">
+            {currentQuestion.options.map((option, index) => (
+              <button
+                key={index}
+                onClick={() => handleAnswer(index)}
+                className={`option-button ${
+                  answers[currentQuestionIndex] === index ? 'selected' : ''
+                }`}
+              >
+                <span className="option-letter">
+                  {String.fromCharCode(65 + index)}
+                </span>
+                <span className="option-text">{option}</span>
+              </button>
+            ))}
+          </div>
+
+          <div className="quiz-navigation">
+            <button
+              onClick={handlePrevious}
+              disabled={currentQuestionIndex === 0}
+              className="btn btn-nav"
+            >
+              ← Anterior
+            </button>
+
+            {currentQuestionIndex === questions.length - 1 ? (
+              <button
+                onClick={handleFinish}
+                disabled={!isAnswered}
+                className="btn btn-finish"
+              >
+                Finalizar Quiz ✓
+              </button>
+            ) : (
+              <button
+                onClick={handleNext}
+                disabled={!isAnswered}
+                className="btn btn-nav"
+              >
+                Próxima →
+              </button>
+            )}
+          </div>
+
+          <div className="unanswered-warning">
+            {!isAnswered && (
+              <p>⚠️ Por favor, selecione uma resposta para continuar</p>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ResultsPage({ userName, score, totalQuestions, onBack, onRetry }) {
+  const percentage = Math.round((score / totalQuestions) * 100);
+  const isPassed = percentage >= 70;
+
+  const handlePrint = () => {
+    window.print();
+  };
+
+  return (
+    <div className="results-page">
+      <div className="container">
+        <div className="results-card">
+          <div className={`results-header ${isPassed ? 'passed' : 'failed'}`}>
+            <h1>Quiz Finalizado!</h1>
+            {isPassed ? (
+              <p className="celebration">🎉 Parabéns!</p>
+            ) : (
+              <p className="encouragement">💪 Continue treinando!</p>
+            )}
+          </div>
+
+          <div className="results-content">
+            <div className="result-item">
+              <span className="label">Nome:</span>
+              <span className="value">{userName}</span>
+            </div>
+
+            <div className="result-item">
+              <span className="label">Acertos:</span>
+              <span className="value">{score}/{totalQuestions}</span>
+            </div>
+
+            <div className="result-item">
+              <span className="label">Percentual:</span>
+              <span className={`value percentage ${isPassed ? 'passed' : 'failed'}`}>
+                {percentage}%
+              </span>
+            </div>
+
+            <div className="score-circle">
+              <svg viewBox="0 0 100 100" className="circle-svg">
+                <circle
+                  cx="50"
+                  cy="50"
+                  r="45"
+                  className={isPassed ? 'circle-passed' : 'circle-failed'}
+                />
+              </svg>
+              <div className="score-text">
+                <span className="score-number">{percentage}%</span>
+              </div>
+            </div>
+
+            {isPassed && (
+              <div className="message-box success">
+                <p>✓ Excelente desempenho! Você demonstrou um ótimo conhecimento das receitas!</p>
+              </div>
+            )}
+
+            {!isPassed && percentage >= 50 && (
+              <div className="message-box warning">
+                <p>⚠️ Bom esforço! Revise as receitas e tente novamente para melhorar seu desempenho.</p>
+              </div>
+            )}
+
+            {percentage < 50 && (
+              <div className="message-box error">
+                <p>❌ Estude mais as receitas e tente novamente. Você consegue melhorar!</p>
+              </div>
+            )}
+          </div>
+
+          <div className="results-actions">
+            <button onClick={handlePrint} className="btn btn-print">
+              🖨️ Imprimir Resultado
+            </button>
+            <button onClick={onRetry} className="btn btn-retry">
+              🔄 Fazer Novo Quiz
+            </button>
+            <button onClick={onBack} className="btn btn-home">
+              🏠 Voltar ao Início
+            </button>
+          </div>
+
+          <div className="print-note">
+            <p>💡 Dica: Use o botão "Imprimir Resultado" para gerar um screenshot ou PDF do seu resultado!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
