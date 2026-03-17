@@ -1,6 +1,6 @@
 .dashboard-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #3f0000 0%, #1a0000 100%);
   padding: 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -20,45 +20,48 @@
 }
 
 .btn-back {
-  background: white;
+  background: #fdb913;
   border: none;
   padding: 10px 16px;
   border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  color: #667eea;
+  color: #3f0000;
   transition: all 0.3s ease;
 }
 
 .btn-back:hover {
   transform: translateX(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: #ffc933;
 }
 
 .dashboard-header h1 {
-  color: white;
+  color: #fdb913;
   font-size: 28px;
   margin: 0;
   flex: 1;
   text-align: center;
+  font-weight: 700;
 }
 
 .btn-download {
-  background: white;
+  background: #fdb913;
   border: none;
   padding: 10px 16px;
   border-radius: 8px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
-  color: #667eea;
+  color: #3f0000;
   transition: all 0.3s ease;
 }
 
 .btn-download:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: #ffc933;
 }
 
 .stats-grid {
@@ -74,18 +77,19 @@
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 3px solid #fdb913;
 }
 
 .stat-number {
   font-size: 32px;
   font-weight: 700;
-  color: #667eea;
+  color: #fdb913;
   margin-bottom: 8px;
 }
 
 .stat-label {
   font-size: 14px;
-  color: #666;
+  color: #3f0000;
   font-weight: 600;
 }
 
@@ -116,7 +120,7 @@
   border-radius: 8px;
   border: none;
   background: white;
-  color: #333;
+  color: #3f0000;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
@@ -125,7 +129,7 @@
 
 .filter-group select:hover,
 .sort-group select:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .users-section {
@@ -159,6 +163,7 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   transition: all 0.3s ease;
+  border-top: 3px solid #fdb913;
 }
 
 .user-card:hover {
@@ -175,15 +180,16 @@
 }
 
 .user-header h3 {
-  color: #333;
+  color: #3f0000;
   font-size: 18px;
   margin: 0;
   flex: 1;
+  font-weight: 700;
 }
 
 .status-badge {
-  background: #667eea;
-  color: white;
+  background: #fdb913;
+  color: #3f0000;
   padding: 4px 10px;
   border-radius: 20px;
   font-size: 12px;
@@ -201,21 +207,21 @@
 .progress-bar {
   flex: 1;
   height: 8px;
-  background: #e0e0e0;
+  background: #efebe1;
   border-radius: 4px;
   overflow: hidden;
 }
 
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, #4CAF50 0%, #45a049 100%);
+  background: linear-gradient(90deg, #fdb913 0%, #ffc933 100%);
   transition: width 0.3s ease;
 }
 
 .progress-text {
   font-size: 12px;
   font-weight: 600;
-  color: #667eea;
+  color: #fdb913;
   min-width: 35px;
   text-align: right;
 }
@@ -245,7 +251,7 @@
   display: block;
   font-size: 16px;
   font-weight: 700;
-  color: #333;
+  color: #3f0000;
 }
 
 .user-details {
@@ -259,7 +265,7 @@
 }
 
 .details-section h4 {
-  color: #333;
+  color: #3f0000;
   font-size: 14px;
   margin: 0 0 10px 0;
   font-weight: 600;
@@ -283,14 +289,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 8px;
-  background: #f8f9ff;
+  background: #fffbf0;
   border-radius: 6px;
   font-size: 12px;
 }
 
 .quiz-type {
   font-weight: 600;
-  color: #667eea;
+  color: #3f0000;
   flex: 1;
 }
 
@@ -353,7 +359,7 @@
 }
 
 .dashboard-info h3 {
-  color: #333;
+  color: #3f0000;
   font-size: 16px;
   margin: 0 0 12px 0;
   font-weight: 600;
