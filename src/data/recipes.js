@@ -25,7 +25,7 @@ export const recipes = [
     name: "Fettuccine Alfredo com Tiras de Carnes",
     ingredients: [
       { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
-      { quantity: "1 pacote", item: "Tiras de Carnes" },
+      { quantity: "2 pacotes", item: "Tiras de Carnes" },
       { quantity: "1 pacote", item: "Molho Alfredo" }
     ]
   },
