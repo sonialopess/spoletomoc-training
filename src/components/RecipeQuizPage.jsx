@@ -251,16 +251,24 @@ function RecipeResultsPage({ userName, score, totalQuestions, onBack, onRetry, q
                       <strong>Receita:</strong> {question.recipeName}
                     </p>
                     <p className="review-text">{question.question}</p>
-                    <p className="review-answer">
-                      <strong>Sua resposta:</strong> {question.options[userAnswers[index]]}
-                    </p>
-                    {userAnswers[index] !== question.correctAnswer && (
-                      <p className="review-correct">
-                        <strong>Resposta correta:</strong> {question.options[question.correctAnswer]}
-                      </p>
-                    )}
+                    <div className="review-answer-section">
+                      <div className="review-answer">
+                        <strong>Sua resposta:</strong>
+                        <span className={userAnswers[index] === question.correctAnswer ? 'answer-correct' : 'answer-incorrect'}>
+                          {question.options[userAnswers[index]]}
+                        </span>
+                      </div>
+                      {userAnswers[index] !== question.correctAnswer && (
+                        <div className="review-correct">
+                          <strong>Resposta correta:</strong>
+                          <span className="answer-correct">
+                            {question.options[question.correctAnswer]}
+                          </span>
+                        </div>
+                      )}
+                    </div>
                     <p className="review-explanation">
-                      <strong>Explicação:</strong> {question.explanation}
+                      <strong>💡 Explicação:</strong> {question.explanation}
                     </p>
                   </div>
                 ))}

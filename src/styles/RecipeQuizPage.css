@@ -402,10 +402,12 @@
 
 .review-item.correct {
   border-left-color: #4CAF50;
+  background: #f0fdf4;
 }
 
 .review-item.incorrect {
   border-left-color: #e74c3c;
+  background: #fef2f2;
 }
 
 .review-question {
@@ -437,10 +439,7 @@
 }
 
 .review-recipe,
-.review-text,
-.review-answer,
-.review-correct,
-.review-explanation {
+.review-text {
   color: #666;
   font-size: 14px;
   margin: 8px 0;
@@ -452,11 +451,63 @@
   color: #667eea;
 }
 
+.review-answer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 12px 0;
+  padding: 12px;
+  background: #f5f5f5;
+  border-radius: 6px;
+}
+
+.review-answer,
+.review-correct {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-answer strong,
+.review-correct strong {
+  color: #333;
+  font-weight: 600;
+  min-width: 140px;
+}
+
+.answer-correct {
+  background: #d4edda;
+  color: #155724;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  flex: 1;
+  text-align: right;
+}
+
+.answer-incorrect {
+  background: #f8d7da;
+  color: #721c24;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  flex: 1;
+  text-align: right;
+}
+
 .review-explanation {
   background: #fff9e6;
-  padding: 10px;
+  padding: 12px;
   border-radius: 4px;
   border-left: 3px solid #f39c12;
+  margin-top: 10px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 .results-actions {
@@ -510,31 +561,27 @@
 }
 
 .print-note {
-  text-align: center;
+  background: #e8f4f8;
+  border-left: 4px solid #3498db;
   padding: 15px;
-  background: #f8f9ff;
-  border-radius: 10px;
-  font-size: 14px;
-  color: #666;
-  border-left: 4px solid #667eea;
+  border-radius: 6px;
+  margin-top: 20px;
 }
 
 .print-note p {
+  color: #2c3e50;
+  font-size: 13px;
   margin: 0;
+  line-height: 1.5;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .question-card {
     padding: 20px;
   }
 
   .question-text {
     font-size: 18px;
-  }
-
-  .option-button {
-    padding: 14px;
-    font-size: 14px;
   }
 
   .results-card {
@@ -545,47 +592,45 @@
     font-size: 24px;
   }
 
-  .result-item {
+  .review-answer,
+  .review-correct {
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
   }
 
-  .quiz-navigation {
-    flex-direction: column;
+  .review-answer strong,
+  .review-correct strong {
+    min-width: auto;
   }
 
-  .btn-nav,
-  .btn-finish {
+  .answer-correct,
+  .answer-incorrect {
+    text-align: left;
     width: 100%;
-  }
-
-  .review-section {
-    padding: 15px;
-  }
-
-  .review-item {
-    padding: 12px;
   }
 }
 
-@media print {
-  body {
-    background: white;
+@media (max-width: 480px) {
+  .quiz-header {
+    flex-direction: column;
   }
 
-  .recipe-results-page {
-    background: white;
-    padding: 0;
+  .quiz-header h1 {
+    font-size: 22px;
+  }
+
+  .question-card {
+    padding: 15px;
   }
 
   .results-card {
-    box-shadow: none;
-    padding: 20px;
+    padding: 20px 15px;
   }
 
-  .results-actions,
-  .print-note {
-    display: none;
+  .btn-print,
+  .btn-retry,
+  .btn-home {
+    padding: 12px 20px;
+    font-size: 14px;
   }
 }
