@@ -202,3 +202,38 @@ export const recipeQuizzes = {
     }
   ]
 };
+
+export function getRandomRecipeQuizzes(count = 20) {
+  const fillInQuestions = recipeQuizzes.receitas.filter(q => q.type === 'fill-in');
+  const multipleChoiceQuestions = recipeQuizzes.receitas.filter(q => q.type === 'multiple-choice');
+  
+  // Garantir que pelo menos 10 sejam de completar ingredientes
+  const minFillIn = Math.max(10, Math.ceil(count * 0.6));
+  const maxMultipleChoice = count - minFillIn;
+  
+  const selectedFillIn = [];
+  const selectedMultipleChoice = [];
+  
+  // Selecionar perguntas de completar
+  for (let i = 0; i < minFillIn && fillInQuestions.length > 0; i++) {
+    const randomIndex = Math.floor(Math.random() * fillInQuestions.length);
+    selectedFillIn.push(fillInQuestions[randomIndex]);
+    fillInQuestions.splice(randomIndex, 1);
+  }
+  
+  // Selecionar perguntas de múltipla escolha
+  for (let i = 0; i < maxMultipleChoice && multipleChoiceQuestions.length > 0; i++) {
+    const randomIndex = Math.floor(Math.random() * multipleChoiceQuestions.length);
+    selectedMultipleChoice.push(multipleChoiceQuestions[randomIndex]);
+    multipleChoiceQuestions.splice(randomIndex, 1);
+  }
+  
+  // Misturar as perguntas
+  const allQuestions = [...selectedFillIn, ...selectedMultipleChoice];
+  for (let i = allQuestions.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
+  }
+  
+  return allQuestions.slice(0, count);
+}

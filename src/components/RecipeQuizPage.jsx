@@ -11,7 +11,7 @@ export default function RecipeQuizPage({ userName, onBack }) {
   const [score, setScore] = useState(0);
 
   useEffect(() => {
-    const quizzes = getRandomRecipeQuizzes(10);
+    const quizzes = getRandomRecipeQuizzes(20);
     setQuestions(quizzes);
   }, []);
 
@@ -67,7 +67,7 @@ export default function RecipeQuizPage({ userName, onBack }) {
           setCurrentQuestionIndex(0);
           setAnswers({});
           setShowResults(false);
-          const newQuizzes = getRandomRecipeQuizzes(10);
+          const newQuizzes = getRandomRecipeQuizzes(20);
           setQuestions(newQuizzes);
         }}
         questions={questions}

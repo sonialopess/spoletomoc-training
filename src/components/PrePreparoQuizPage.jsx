@@ -10,9 +10,35 @@ export default function PrePreparoQuizPage({ userName, onBack }) {
   const [quizQuestions, setQuizQuestions] = useState([]);
 
   useEffect(() => {
-    // Shuffle and select 10 random questions
-    const shuffled = [...prePreparoQuizzes].sort(() => Math.random() - 0.5);
-    setQuizQuestions(shuffled.slice(0, 10));
+    // Selecionar 20 perguntas com pelo menos 10 de completar ingredientes
+    const fillInQuestions = prePreparoQuizzes.filter(q => q.type === 'fill-in');
+    const multipleChoiceQuestions = prePreparoQuizzes.filter(q => q.type === 'multiple-choice');
+    
+    const selectedFillIn = [];
+    const selectedMultipleChoice = [];
+    
+    // Selecionar 12 perguntas de completar
+    for (let i = 0; i < 12 && fillInQuestions.length > 0; i++) {
+      const randomIndex = Math.floor(Math.random() * fillInQuestions.length);
+      selectedFillIn.push(fillInQuestions[randomIndex]);
+      fillInQuestions.splice(randomIndex, 1);
+    }
+    
+    // Selecionar 8 perguntas de múltipla escolha
+    for (let i = 0; i < 8 && multipleChoiceQuestions.length > 0; i++) {
+      const randomIndex = Math.floor(Math.random() * multipleChoiceQuestions.length);
+      selectedMultipleChoice.push(multipleChoiceQuestions[randomIndex]);
+      multipleChoiceQuestions.splice(randomIndex, 1);
+    }
+    
+    // Misturar as perguntas
+    const allQuestions = [...selectedFillIn, ...selectedMultipleChoice];
+    for (let i = allQuestions.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
+    }
+    
+    setQuizQuestions(allQuestions);
   }, []);
 
   const currentQuestion = quizQuestions[currentQuestionIndex];
@@ -76,8 +102,31 @@ export default function PrePreparoQuizPage({ userName, onBack }) {
     setAnswers({});
     setShowResults(false);
     setScore(0);
-    const shuffled = [...prePreparoQuizzes].sort(() => Math.random() - 0.5);
-    setQuizQuestions(shuffled.slice(0, 10));
+    const fillInQuestions = prePreparoQuizzes.filter(q => q.type === 'fill-in');
+    const multipleChoiceQuestions = prePreparoQuizzes.filter(q => q.type === 'multiple-choice');
+    
+    const selectedFillIn = [];
+    const selectedMultipleChoice = [];
+    
+    for (let i = 0; i < 12 && fillInQuestions.length > 0; i++) {
+      const randomIndex = Math.floor(Math.random() * fillInQuestions.length);
+      selectedFillIn.push(fillInQuestions[randomIndex]);
+      fillInQuestions.splice(randomIndex, 1);
+    }
+    
+    for (let i = 0; i < 8 && multipleChoiceQuestions.length > 0; i++) {
+      const randomIndex = Math.floor(Math.random() * multipleChoiceQuestions.length);
+      selectedMultipleChoice.push(multipleChoiceQuestions[randomIndex]);
+      multipleChoiceQuestions.splice(randomIndex, 1);
+    }
+    
+    const allQuestions = [...selectedFillIn, ...selectedMultipleChoice];
+    for (let i = allQuestions.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [allQuestions[i], allQuestions[j]] = [allQuestions[j], allQuestions[i]];
+    }
+    
+    setQuizQuestions(allQuestions)
   };
 
   if (!currentQuestion) {
