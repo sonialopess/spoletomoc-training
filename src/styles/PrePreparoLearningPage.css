@@ -1,0 +1,381 @@
+.pre-preparo-learning-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #3f0000 0%, #2a0000 100%);
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pre-preparo-learning-page .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pre-preparo-learning-page .header {
+  position: relative;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.pre-preparo-learning-page .btn-back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fdb913;
+  color: #3f0000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.pre-preparo-learning-page .btn-back:hover {
+  background: #ffffff;
+  transform: translateX(-5px);
+}
+
+.pre-preparo-learning-page h1 {
+  color: #fdb913;
+  font-size: 36px;
+  margin: 20px 0 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.pre-preparo-learning-page .user-greeting {
+  color: #efebe1;
+  font-size: 16px;
+  margin: 0;
+}
+
+.progress-section {
+  margin: 30px 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #fdb913, #ffeb3b);
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px rgba(253, 185, 19, 0.5);
+}
+
+.progress-text {
+  color: #efebe1;
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
+}
+
+.recipe-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  margin: 20px 0;
+  border-top: 4px solid #fdb913;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #efebe1;
+}
+
+.recipe-header h2 {
+  color: #3f0000;
+  font-size: 28px;
+  margin: 0 0 10px 0;
+}
+
+.recipe-category {
+  color: #fdb913;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.recipe-description {
+  color: #666;
+  font-style: italic;
+  margin: 5px 0 0 0;
+}
+
+.recipe-counter {
+  background: #fdb913;
+  color: #3f0000;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.recipe-content {
+  margin: 20px 0;
+}
+
+.ingredients-section,
+.preparation-section {
+  margin-bottom: 25px;
+}
+
+.ingredients-section h3,
+.preparation-section h3 {
+  color: #3f0000;
+  font-size: 18px;
+  margin: 0 0 15px 0;
+  border-bottom: 2px solid #fdb913;
+  padding-bottom: 10px;
+}
+
+.ingredients-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ingredient-item {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #efebe1;
+  align-items: center;
+}
+
+.ingredient-item:last-child {
+  border-bottom: none;
+}
+
+.quantity {
+  background: #fdb913;
+  color: #3f0000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 15px;
+  min-width: 100px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.item {
+  color: #333;
+  flex: 1;
+}
+
+.preparation-text {
+  color: #333;
+  line-height: 1.8;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #fdb913;
+}
+
+.cooking-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.info-box {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #fdb913;
+}
+
+.info-box strong {
+  color: #3f0000;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.info-box span {
+  color: #333;
+  font-size: 14px;
+}
+
+.cooking-method {
+  display: inline-block;
+  background: #fdb913;
+  color: #3f0000;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.study-actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-studied {
+  background: #fdb913;
+  color: #3f0000;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-studied:hover {
+  background: #ffeb3b;
+  transform: scale(1.05);
+}
+
+.studied-badge {
+  display: inline-block;
+  background: #d4edda;
+  color: #155724;
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 2px solid #28a745;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.btn-nav {
+  background: #fdb913;
+  color: #3f0000;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 120px;
+}
+
+.btn-nav:hover:not(:disabled) {
+  background: #ffeb3b;
+  transform: scale(1.05);
+}
+
+.btn-nav:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.progress-text-nav {
+  color: #fdb913;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.recipes-list-section {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  border-top: 4px solid #fdb913;
+  margin-top: 30px;
+}
+
+.recipes-list-section h3 {
+  color: #3f0000;
+  font-size: 20px;
+  margin: 0 0 20px 0;
+}
+
+.recipes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.recipe-link {
+  background: #f9f9f9;
+  color: #3f0000;
+  border: 2px solid #efebe1;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-align: center;
+  word-break: break-word;
+}
+
+.recipe-link:hover {
+  border-color: #fdb913;
+  background: #fdb913;
+  color: #3f0000;
+}
+
+.recipe-link.studied {
+  background: #d4edda;
+  border-color: #28a745;
+  color: #155724;
+}
+
+.recipe-link.active {
+  background: #fdb913;
+  color: #3f0000;
+  border-color: #fdb913;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .pre-preparo-learning-page h1 {
+    font-size: 24px;
+  }
+
+  .recipe-header {
+    flex-direction: column;
+  }
+
+  .recipe-counter {
+    margin-top: 10px;
+  }
+
+  .cooking-info {
+    grid-template-columns: 1fr;
+  }
+
+  .navigation-buttons {
+    flex-direction: column;
+  }
+
+  .btn-nav {
+    width: 100%;
+  }
+
+  .recipes-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+
+  .pre-preparo-learning-page .btn-back {
+    position: static;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}

@@ -7,6 +7,10 @@ import ModulesPage from './components/ModulesPage';
 import ModuleQuizPage from './components/ModuleQuizPage';
 import TrainingPage from './components/TrainingPage';
 import QuizPage from './components/QuizPage';
+import PrePreparoSelectionPage from './components/PrePreparoSelectionPage';
+import PrePreparoLearningPage from './components/PrePreparoLearningPage';
+import PrePreparoQuizPage from './components/PrePreparoQuizPage';
+import PrePreparoMicrolearningPage from './components/PrePreparoMicrolearningPage';
 import './App.css';
 
 export default function App() {
@@ -66,6 +70,19 @@ export default function App() {
     setCurrentPage('recipes');
   };
 
+  const handleStartPrePreparo = (name) => {
+    setUserName(name);
+    setCurrentPage('pre-preparo-selection');
+  };
+
+  const handleSelectPrePreparoMode = (mode) => {
+    setCurrentPage(mode);
+  };
+
+  const handleBackToPrePreparoSelection = () => {
+    setCurrentPage('pre-preparo-selection');
+  };
+
   return (
     <div className="app">
       {currentPage === 'home' && (
@@ -75,6 +92,7 @@ export default function App() {
           onStartModules={handleStartModules}
           onStartTraining={handleStartTraining}
           onStartQuiz={handleStartQuiz}
+          onStartPrePreparo={handleStartPrePreparo}
         />
       )}
       {currentPage === 'dashboard' && (
@@ -113,6 +131,31 @@ export default function App() {
       )}
       {currentPage === 'quiz' && (
         <QuizPage userName={userName} onBack={handleBack} />
+      )}
+      {currentPage === 'pre-preparo-selection' && (
+        <PrePreparoSelectionPage
+          userName={userName}
+          onSelectMode={handleSelectPrePreparoMode}
+          onBack={handleBack}
+        />
+      )}
+      {currentPage === 'pre-preparo-recipes' && (
+        <PrePreparoLearningPage
+          userName={userName}
+          onBack={handleBackToPrePreparoSelection}
+        />
+      )}
+      {currentPage === 'pre-preparo-quiz' && (
+        <PrePreparoQuizPage
+          userName={userName}
+          onBack={handleBackToPrePreparoSelection}
+        />
+      )}
+      {currentPage === 'pre-preparo-microlearning' && (
+        <PrePreparoMicrolearningPage
+          userName={userName}
+          onBack={handleBackToPrePreparoSelection}
+        />
       )}
     </div>
   );

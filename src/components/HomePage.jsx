@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/HomePage.css';
 
-export default function HomePage({ onStartDashboard, onStartRecipes, onStartModules, onStartTraining, onStartQuiz }) {
+export default function HomePage({ onStartDashboard, onStartRecipes, onStartModules, onStartTraining, onStartQuiz, onStartPrePreparo }) {
   const [name, setName] = useState('');
   const [error, setError] = useState('');
 
@@ -41,6 +41,15 @@ export default function HomePage({ onStartDashboard, onStartRecipes, onStartModu
     }
   };
 
+  const handleStartPrePreparo = () => {
+    if (name.trim()) {
+      setError('');
+      onStartPrePreparo(name);
+    } else {
+      setError('Por favor, digite seu nome para continuar');
+    }
+  };
+
   return (
     <div className="home-page">
       <div className="container">
@@ -54,6 +63,13 @@ export default function HomePage({ onStartDashboard, onStartRecipes, onStartModu
           <div className="logo-section">
             <h1 className="title">Spoleto</h1>
             <p className="subtitle">Treinamento de Receitas</p>
+            <div className="menu-type-selector">
+              <p className="menu-type-label">Tipo de Treinamento:</p>
+              <div className="menu-type-buttons">
+                <button className="menu-type-btn active">🍽️ Receitas Fechadas</button>
+                <button className="menu-type-btn" onClick={handleStartPrePreparo}>🥘 Pré-Preparo</button>
+              </div>
+            </div>
           </div>
 
           <div className="form-section">
@@ -103,6 +119,7 @@ export default function HomePage({ onStartDashboard, onStartRecipes, onStartModu
             <p className="info-text">
               Bem-vindo ao sistema de treinamento de receitas do Spoleto! 
               Escolha entre estudar receitas individuais (recomendado), microlearning, ver todas ou fazer um quiz.
+              Você também pode treinar receitas de pré-preparo como ingredientes e preparações.
             </p>
           </div>
         </div>
