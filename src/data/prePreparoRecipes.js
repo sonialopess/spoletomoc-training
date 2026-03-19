@@ -4,7 +4,7 @@ export const prePreparoRecipes = [
     category: "Proteínas",
     subcategory: "Frango",
     name: "Tiras de Frango",
-    description: "Filé de peito marinado para finalização na frigideira",
+    description: "Filé de peito marinado e assado no forno (pré-preparo), finalizado na frigideira",
     ingredients: [
       { quantity: "1kg", item: "Peito de frango" },
       { quantity: "25g", item: "Vinho" },
@@ -14,8 +14,8 @@ export const prePreparoRecipes = [
       { quantity: "5g", item: "Sálvia" },
       { quantity: "5g", item: "Alecrim" }
     ],
-    preparationMethod: "Misturar os temperos usando mixer separadamente. Depois misturar nos filés na GN de forma que todos fiquem cobertos e marinar por 12 horas. Assar com sonda.",
-    cookingMethod: "Panela",
+    preparationMethod: "Misturar os temperos usando mixer separadamente. Depois misturar nos filés na GN de forma que todos fiquem cobertos e marinar por 12 horas. Assar com sonda no forno.",
+    cookingMethod: "Forno",
     storage: "Sob refrigeração: 0°C a 4°C",
     validity: "1 dia",
     finalWeight: "75gr"
