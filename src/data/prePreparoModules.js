@@ -7,239 +7,175 @@ export const prePreparoModules = [
     lessons: [
       {
         id: 1,
-        title: "Filé de Frango Marinado",
-        content: "Base para grelhado, parmegiana e milanesa. Preparado com açúcar, alho, alecrim, vinho branco, molho pesto e sal. Marinado por no mínimo 3 horas.",
-        cookingMethod: "Forno",
+        title: "Tiras de Frango",
+        content: "Filé de peito marinado com vinho, pesto, sal, pimenta do reino, sálvia e alecrim. Misturar os temperos no mixer separadamente, depois misturar nos filés na GN. Marinar por 12 horas. Assar com sonda. Finalizado na frigideira.",
+        cookingMethod: "Panela",
         recipeIds: [1]
       },
       {
         id: 2,
-        title: "Filé de Peito Marinado",
-        content: "Para frango em tiras. Mesmo tempero do filé de frango, mas em filés de peito. Finalizado na panela.",
-        cookingMethod: "Panela",
+        title: "Filé de Frango",
+        content: "Filé inteiro marinado com sal, vinho branco, pesto, alecrim, açúcar e alho CRU. Misturar os temperos no mixer e depois misturar nos filés na GN. Transferir para vazilha. Finalizado no forno.",
+        cookingMethod: "Forno",
         recipeIds: [2]
       },
       {
         id: 3,
-        title: "Coração da Alcatra",
-        content: "Carne de qualidade para tiras e escalope. Temperada com sal e pimenta. Finalizada na panela.",
-        cookingMethod: "Panela",
-        recipeIds: [5]
+        title: "Escalope/Tiras de Carne",
+        content: "Coração da alcatra ou filé mignon marinado com óleo, vinho tinto, sal, molho pesto e pimenta preta em pó. Misturar os temperos no mixer e depois misturar na carne. Marinar por 3 horas. Tiras na frigideira, escalope no forno.",
+        cookingMethod: "Panela/Forno",
+        recipeIds: [3]
       },
       {
         id: 4,
         title: "Camarão Marinado",
-        content: "Duas opções: finalização na frigideira ou no forno. Marinado com alho, sal, azeite e pimenta.",
-        cookingMethod: "Panela/Forno",
-        recipeIds: [8, 9]
+        content: "Camarão marinado com vinho branco, pesto, alho assado e sal. Marinar por 3 horas. Pode ser pré-assado no forno ou finalizado na hora.",
+        cookingMethod: "Forno",
+        recipeIds: [4]
       }
     ]
   },
   {
     id: 2,
-    name: "Legumes Crus",
+    name: "Legumes e Vegetais",
     icon: "🥬",
-    description: "Legumes frescos e crus para complementar os pratos",
+    description: "Legumes frescos preparados para complementar os pratos",
     lessons: [
       {
         id: 1,
-        title: "Mix de Legumes",
-        content: "Abobrinha e berinjela cortadas em cubos, misturadas com sal, pesto, alho assado e cebola refogada. Servido cru.",
-        cookingMethod: "Cru",
-        recipeIds: [10]
+        title: "Mix de Vegetais",
+        content: "Abobrinha e berinjelas cortadas, misturadas com azeite de bagaço, sal, pesto e alho assado. Preparado no forno ou fogão.",
+        cookingMethod: "Forno/Fogão",
+        recipeIds: [6]
       },
       {
         id: 2,
-        title: "Cenoura Ralada",
-        content: "Cenoura fresca ralada e temperada com sal. Simples e nutritivo.",
-        cookingMethod: "Cru",
-        recipeIds: [11]
+        title: "Alho Poró",
+        content: "Alho poró cortado e temperado com azeite bagaço e sal. Preparado no fogão ou forno.",
+        cookingMethod: "Fogão/Forno",
+        recipeIds: [7]
       },
       {
         id: 3,
-        title: "Alho Poró",
-        content: "Alho poró cortado em rodelas finas e temperado com sal. Adiciona sabor suave.",
-        cookingMethod: "Cru",
-        recipeIds: [12]
-      },
-      {
-        id: 4,
         title: "Brócolis",
-        content: "Brócolis cortado em florets pequenos e temperado com sal. Crocante e saudável.",
-        cookingMethod: "Cru",
-        recipeIds: [13]
-      },
-      {
-        id: 5,
-        title: "Tomate em Cubos",
-        content: "Tomate fresco cortado em cubos pequenos e temperado com sal. Deve ser usado no mesmo dia.",
-        cookingMethod: "Cru",
-        recipeIds: [14]
+        content: "Brócolis cortado em florets, temperado com azeite bagaço e sal. Preparado no forno ou fogão.",
+        cookingMethod: "Forno/Fogão",
+        recipeIds: [8]
       }
     ]
   },
   {
     id: 3,
-    name: "Ingredientes Assados",
+    name: "Molhos e Preparos",
     icon: "🔥",
-    description: "Ingredientes preparados no forno com sabor intenso",
+    description: "Molhos e preparos que enriquecem os pratos",
     lessons: [
       {
         id: 1,
-        title: "Cogumelos Assado Forno",
-        content: "Cogumelos cortados em fatias, temperados com azeite, alho e sal. Assados a 180°C por 15 minutos.",
+        title: "Tomate Assado",
+        content: "Tomate cortado, misturado com azeite de bagaço, açúcar, sal, alho assado e manjericão. Assado no forno.",
         cookingMethod: "Forno",
-        recipeIds: [16]
+        recipeIds: [9]
       },
       {
         id: 2,
-        title: "Bacon Assado",
-        content: "Bacon crocante assado no forno a 200°C até ficar bem crocante (aproximadamente 15 minutos).",
-        cookingMethod: "Forno",
-        recipeIds: [17]
+        title: "Ricota Temperada",
+        content: "Ricota fresca misturada in natura com pimenta calabresa, oregano, salsa e sal.",
+        cookingMethod: "Cru",
+        recipeIds: [10]
       },
       {
         id: 3,
-        title: "Calabresa Assada",
-        content: "Calabresa cortada em rodelas e assada no forno a 180°C por 10 minutos. Fica crocante e saborosa.",
-        cookingMethod: "Forno",
-        recipeIds: [18]
+        title: "Pesto de Azeitona",
+        content: "Azeitona preta (455g batida em pasta e 455g em pedaços), misturada com azeite de bagaço, mix de erva e alho assado.",
+        cookingMethod: "Cru",
+        recipeIds: [11]
       },
       {
         id: 4,
-        title: "Tomate Assado",
-        content: "Tomate cortado ao meio, temperado com azeite, alho e sal. Assado a 180°C por 20 minutos.",
-        cookingMethod: "Forno",
-        recipeIds: [19]
+        title: "Cebola Caramelizada",
+        content: "Cebola roxa caramelizada com azeite bagaço, açúcar, sal e vinho tinto. Preparada no forno ou fogão.",
+        cookingMethod: "Forno/Fogão",
+        recipeIds: [12]
       },
       {
         id: 5,
-        title: "Alho Assado",
-        content: "Alho descascado, temperado com azeite e sal. Assado a 180°C por 30 minutos. Fica macio e doce.",
-        cookingMethod: "Forno",
-        recipeIds: [20]
+        title: "Cebola Refogada",
+        content: "Cebola branca refogada em azeite bagaço com sal. Preparada no forno ou fogão.",
+        cookingMethod: "Forno/Fogão",
+        recipeIds: [13]
       },
       {
         id: 6,
-        title: "Cebola Refogada",
-        content: "Cebola em tiras finas, refogada em azeite quente até ficar macia e levemente dourada.",
-        cookingMethod: "Panela",
-        recipeIds: [21]
+        title: "Alho Assado",
+        content: "Alho descascado assado no forno com azeite bagaço e sal. Fica macio e doce.",
+        cookingMethod: "Forno",
+        recipeIds: [14]
+      },
+      {
+        id: 7,
+        title: "Farofa de Torradas",
+        content: "Torradas batidas no mixer com pesto, formando uma farofa crocante.",
+        cookingMethod: "Cru",
+        recipeIds: [15]
       }
     ]
   },
   {
     id: 4,
-    name: "Queijos e Laticínios",
-    icon: "🧀",
-    description: "Diferentes tipos de queijos e laticínios para enriquecer os pratos",
+    name: "Preparos Especiais",
+    icon: "👨‍🍳",
+    description: "Preparos especiais e bases para pratos",
     lessons: [
       {
         id: 1,
-        title: "Gorgonzola",
-        content: "Queijo gorgonzola cortado em cubos pequenos. Sabor forte e característico. Servido cru.",
-        cookingMethod: "Cru",
-        recipeIds: [22]
+        title: "Risotto",
+        content: "Risotto preparado com arroz, vinho branco, água, cebola, cenoura, sal e cebolinha. Preparado no forno ou panela elétrica.",
+        cookingMethod: "Forno/Panela",
+        recipeIds: [16]
       },
       {
         id: 2,
-        title: "Ricota Temperada",
-        content: "Ricota misturada com sal, pimenta e manjericão. Fresco e leve.",
-        cookingMethod: "Cru",
-        recipeIds: [23]
+        title: "Frango Desfiado",
+        content: "Frango pré-cozido e desfiado, temperado com azeite de bagaço e pimenta do reino. Pré-preparo no forno.",
+        cookingMethod: "Forno",
+        recipeIds: [5]
       },
       {
         id: 3,
-        title: "Mussarela",
-        content: "Mussarela cortada em cubos pequenos. Suave e versátil.",
+        title: "Ovo em Pó",
+        content: "Ovo em pó hidratado com água filtrada, misturado com garfo ou mixer.",
         cookingMethod: "Cru",
-        recipeIds: [24]
-      },
-      {
-        id: 4,
-        title: "Ovo de Codorna",
-        content: "Ovo de codorna cozido em água fervente por 3 minutos, depois descascado. Pequeno e delicado.",
-        cookingMethod: "Panela",
-        recipeIds: [25]
-      },
-      {
-        id: 5,
-        title: "Mozzarella de Búfula",
-        content: "Mozzarella de búfula fresca, servida em temperatura ambiente. Cremosa e delicada.",
-        cookingMethod: "Cru",
-        recipeIds: [26]
+        recipeIds: [17]
       }
     ]
   },
   {
     id: 5,
-    name: "Complementos e Extras",
-    icon: "✨",
-    description: "Ingredientes complementares que enriquecem os pratos",
-    lessons: [
-      {
-        id: 1,
-        title: "Presunto Ralado",
-        content: "Presunto ralado em ralador fino. Adiciona sabor salgado e textura.",
-        cookingMethod: "Cru",
-        recipeIds: [27]
-      },
-      {
-        id: 2,
-        title: "Peito de Peru",
-        content: "Peito de peru fatiado em fatias finas. Leve e saudável.",
-        cookingMethod: "Cru",
-        recipeIds: [28]
-      },
-      {
-        id: 3,
-        title: "Pesto de Azeitona Preta",
-        content: "Pesto feito com azeitona preta, azeite, alho e sal. Sabor intenso e marcante.",
-        cookingMethod: "Cru",
-        recipeIds: [29]
-      },
-      {
-        id: 4,
-        title: "Espinafre",
-        content: "Espinafre fresco, lavado, picado e temperado com sal. Nutritivo e saudável.",
-        cookingMethod: "Cru",
-        recipeIds: [30]
-      },
-      {
-        id: 5,
-        title: "Frango Desfiado",
-        content: "Frango pré-cozido e desfiado. Pode ser aquecido ou servido cru conforme necessário.",
-        cookingMethod: "Cru",
-        recipeIds: [3]
-      }
-    ]
-  },
-  {
-    id: 6,
     name: "Formas de Preparo",
-    icon: "👨‍🍳",
+    icon: "🔄",
     description: "Aprenda os diferentes métodos de cozimento",
     lessons: [
       {
         id: 1,
         title: "Preparos no Forno",
-        content: "Ingredientes assados no forno: cogumelos, bacon, calabresa, tomate, alho, frango à milanesa, carne à milanesa, camarão (algumas variações). Temperatura geralmente entre 180°C e 200°C.",
+        content: "Ingredientes assados no forno: Filé de Frango, Camarão Marinado, Frango Desfiado, Tomate Assado, Alho Assado, Mix de Vegetais, Brócolis, Alho Poró, Cebola Caramelizada, Cebola Refogada, Risotto. Temperatura geralmente entre 180°C e 200°C.",
         cookingMethod: "Forno",
-        recipeIds: [1, 4, 6, 9, 16, 17, 18, 19, 20]
+        recipeIds: [2, 4, 5, 9, 14, 6, 8, 7, 12, 13, 16]
       },
       {
         id: 2,
-        title: "Preparos na Panela",
-        content: "Ingredientes refogados ou cozidos na panela: cebola refogada, ovo de codorna, filé de peito marinado, coração da alcatra, camarão (algumas variações).",
+        title: "Preparos na Panela/Frigideira",
+        content: "Ingredientes finalizados na panela ou frigideira: Tiras de Frango, Escalope/Tiras de Carne. Estes ficam crocantes por fora e macios por dentro.",
         cookingMethod: "Panela",
-        recipeIds: [2, 5, 8, 21, 25]
+        recipeIds: [1, 3]
       },
       {
         id: 3,
         title: "Preparos Crus",
-        content: "Ingredientes servidos crus: mix de legumes, cenoura ralada, alho poró, brócolis, tomate em cubos, uvas passas, gorgonzola, ricota, mussarela, mozzarella, presunto, peito de peru, pesto, espinafre, frango desfiado.",
+        content: "Ingredientes preparados crus: Ricota Temperada, Pesto de Azeitona, Farofa de Torradas, Ovo em Pó. Estes mantêm suas características naturais e frescas.",
         cookingMethod: "Cru",
-        recipeIds: [3, 10, 11, 12, 13, 14, 15, 22, 23, 24, 26, 27, 28, 29, 30]
+        recipeIds: [10, 11, 15, 17]
       }
     ]
   }
