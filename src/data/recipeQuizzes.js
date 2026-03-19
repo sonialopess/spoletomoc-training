@@ -1,198 +1,204 @@
 export const recipeQuizzes = {
   receitas: [
+    // PERGUNTAS DE COMPLETAR (ESCREVER)
     {
       id: 1,
+      type: "fill-in",
       recipeName: "Fettuccine Allegro",
       question: "Fettuccine Allegro é feita com Molho de Queijos, Alho Poró, Bacon, Ovo de Codorna e o que mais?",
-      options: ["Calabresa", "Brócolis", "Tomate", "Camarão"],
-      correctAnswer: 0,
-      explanation: "Fettuccine Allegro tem Calabresa como ingrediente adicional."
+      correctAnswer: "Calabresa",
+      explanation: "Fettuccine Allegro tem Calabresa como ingrediente adicional que dá sabor e cor ao prato.",
+      hints: ["Começa com C", "É uma carne processada", "Tem sabor defumado"]
     },
+    // PERGUNTA DE MÚLTIPLA ESCOLHA
     {
       id: 2,
+      type: "multiple-choice",
       recipeName: "Fettuccine Alfredo com Tiras de Frango",
       question: "Quais são os ingredientes principais da Fettuccine Alfredo com Tiras de Frango além da massa e molho?",
       options: ["Bacon e Calabresa", "Apenas Tiras de Frango", "Ovo de Codorna e Presunto", "Camarão e Cogumelo"],
       correctAnswer: 1,
-      explanation: "A receita é simples: Fettuccine, Molho Alfredo e Tiras de Frango."
+      explanation: "A receita é simples e elegante: Fettuccine, Molho Alfredo e Tiras de Frango."
     },
+    // COMPLETAR (ESCREVER)
     {
       id: 3,
+      type: "fill-in",
       recipeName: "Fettuccine Molho Branco com Tiras de Frango",
       question: "Fettuccine Molho Branco com Tiras de Frango leva Pesto, Queijo Parmesão, Tomate em Cubos e o que mais?",
-      options: ["Manjericão", "Calabresa", "Bacon", "Camarão"],
-      correctAnswer: 0,
-      explanation: "Manjericão é o ingrediente aromático que complementa esta receita."
+      correctAnswer: "Manjericão",
+      explanation: "Manjericão é o ingrediente aromático que complementa esta receita com sabor fresco.",
+      hints: ["É uma erva", "Começa com M", "Tem sabor fresco e aromático"]
     },
+    // MÚLTIPLA ESCOLHA
     {
       id: 4,
+      type: "multiple-choice",
       recipeName: "Fettuccine Marinara e Parmegiana",
       question: "Quais ingredientes complementam a Fettuccine Marinara e Parmegiana além da massa e molho?",
       options: ["Alho, Orégano e Carne/Frango Parmegiana", "Bacon, Calabresa e Ovo", "Camarão, Presunto e Ricota", "Brócolis, Cenoura e Alho Poró"],
       correctAnswer: 0,
-      explanation: "Alho, Orégano e Carne/Frango Parmegiana são os complementos principais."
+      explanation: "Alho, Orégano e Carne/Frango Parmegiana são os complementos principais que dão sabor italiano."
     },
+    // COMPLETAR (ESCREVER)
     {
       id: 5,
+      type: "fill-in",
       recipeName: "Fettuccine Gorgonzola e Parmegiana",
-      question: "Fettuccine Gorgonzola e Parmegiana leva Queijo Gorgonzola, Carne/Frango Parmegiana e o que mais?",
-      options: ["Bacon e Calabresa", "Apenas esses dois ingredientes", "Ovo de Codorna e Presunto", "Cogumelo e Ricota"],
-      correctAnswer: 1,
-      explanation: "Fettuccine Gorgonzola e Parmegiana tem apenas Queijo Gorgonzola e Carne/Frango Parmegiana como complementos."
+      question: "Fettuccine Gorgonzola e Parmegiana leva Queijo Gorgonzola, Carne/Frango Parmegiana e qual outro ingrediente?",
+      correctAnswer: "Nenhum",
+      explanation: "Fettuccine Gorgonzola e Parmegiana tem apenas Queijo Gorgonzola e Carne/Frango Parmegiana como complementos.",
+      hints: ["Responda: Nenhum", "É uma receita simples", "Apenas 2 ingredientes além da massa"]
     },
+    // MÚLTIPLA ESCOLHA
     {
       id: 6,
+      type: "multiple-choice",
       recipeName: "Penne Frango e Bacon",
       question: "Penne Frango e Bacon é feita com Bacon, Frango Desfiado, Tomate em Cubos e o que mais?",
       options: ["Calabresa", "Ovo de Codorna", "Presunto", "Camarão"],
       correctAnswer: 0,
-      explanation: "Calabresa é o ingrediente que completa a Penne Frango e Bacon."
+      explanation: "Calabresa é o ingrediente que completa a Penne Frango e Bacon com sabor defumado."
     },
+    // COMPLETAR (ESCREVER)
     {
       id: 7,
+      type: "fill-in",
       recipeName: "Penne Bolognesa e Bacon",
-      question: "Quais ingredientes tem a Penne Bolognesa e Bacon além da massa e molho?",
-      options: ["Alho, Bacon, Cebola, Muçarela e Ovo de Codorna", "Apenas Bacon", "Bacon, Calabresa e Presunto", "Bacon, Camarão e Cogumelo"],
-      correctAnswer: 0,
-      explanation: "Penne Bolognesa e Bacon tem Alho, Bacon, Cebola, Muçarela e Ovo de Codorna."
+      question: "Penne Bolognesa e Bacon é feita com massa penne, cebola, alho, bacon e o que mais?",
+      correctAnswer: "Molho Bolognesa",
+      explanation: "O Molho Bolognesa é o principal componente que dá sabor à receita.",
+      hints: ["É um molho", "Começa com M", "Tem carne moída"]
     },
+    // MÚLTIPLA ESCOLHA
     {
       id: 8,
-      recipeName: "Spaghetti ao Pomodoro e Escalope",
-      question: "Spaghetti ao Pomodoro e Escalope leva Molho Pomodoro e o que mais?",
-      options: ["Apenas Escalope de Carne", "Escalope de Carne e Alho", "Escalope de Carne, Bacon e Calabresa", "Escalope de Carne e Camarão"],
+      type: "multiple-choice",
+      recipeName: "Penne Frango Assado",
+      question: "Quais ingredientes tem a Penne Frango Assado?",
+      options: ["Penne, Frango Assado, Tomate em Cubos, Alho Poró", "Penne, Bacon, Calabresa, Ovo", "Penne, Camarão, Presunto, Ricota", "Penne, Brócolis, Cenoura, Cebola"],
       correctAnswer: 0,
-      explanation: "A receita é simples: Spaghetti, Molho Pomodoro e Escalope de Carne."
+      explanation: "Penne Frango Assado tem Penne, Frango Assado, Tomate em Cubos e Alho Poró."
     },
+    // COMPLETAR (ESCREVER)
     {
       id: 9,
-      recipeName: "Spaghetti com Tiras de Frango",
-      question: "Spaghetti com Tiras de Frango leva Tiras de Frango, Mix de Ervas e o que mais?",
-      options: ["Bacon", "Apenas esses dois", "Ovo de Codorna", "Camarão"],
-      correctAnswer: 1,
-      explanation: "Spaghetti com Tiras de Frango tem apenas Tiras de Frango e Mix de Ervas como complementos."
+      type: "fill-in",
+      recipeName: "Spaghetti Bolognesa",
+      question: "Spaghetti Bolognesa é feita com Spaghetti, Molho Bolognesa, Cebola, Alho e o que mais?",
+      correctAnswer: "Queijo Parmesão",
+      explanation: "Queijo Parmesão é o complemento que finaliza a receita com sabor.",
+      hints: ["É um queijo", "Começa com Q", "É ralado"]
     },
+    // MÚLTIPLA ESCOLHA
     {
       id: 10,
-      recipeName: "Spaghetti com Filé de Frango",
-      question: "Quais ingredientes complementam o Spaghetti com Filé de Frango além da massa e molho?",
-      options: ["Filé de Frango, Alho Poró, Calabresa e Brócolis", "Apenas Filé de Frango", "Filé de Frango, Bacon e Camarão", "Filé de Frango, Presunto e Cogumelo"],
+      type: "multiple-choice",
+      recipeName: "Spaghetti Carbonara",
+      question: "Quais são os ingredientes principais da Spaghetti Carbonara?",
+      options: ["Spaghetti, Bacon, Ovo, Queijo Parmesão", "Spaghetti, Tomate, Alho, Cebola", "Spaghetti, Camarão, Presunto, Ricota", "Spaghetti, Brócolis, Cenoura, Alho Poró"],
       correctAnswer: 0,
-      explanation: "Filé de Frango, Alho Poró, Calabresa e Brócolis são os complementos."
+      explanation: "Spaghetti Carbonara é feita com Spaghetti, Bacon, Ovo e Queijo Parmesão."
     },
+    // COMPLETAR (ESCREVER)
     {
       id: 11,
-      recipeName: "Spaghetti Pomodoro e Filé de Frango",
-      question: "Spaghetti Pomodoro e Filé de Frango leva Manjericão, Ricota, Bacon, Filé de Frango e o que mais?",
-      options: ["Calabresa", "Apenas esses", "Ovo de Codorna", "Camarão"],
-      correctAnswer: 1,
-      explanation: "Spaghetti Pomodoro e Filé de Frango tem esses ingredientes listados."
+      type: "fill-in",
+      recipeName: "Farfalle Frango e Cogumelo",
+      question: "Farfalle Frango e Cogumelo é feita com Farfalle, Frango, Cogumelo Trufado e o que mais?",
+      correctAnswer: "Molho Branco",
+      explanation: "O Molho Branco é o que une todos os ingredientes nesta receita elegante.",
+      hints: ["É um molho", "Começa com M", "É cremoso"]
     },
+    // MÚLTIPLA ESCOLHA
     {
       id: 12,
-      recipeName: "Massa Al Mare",
-      question: "Massa Al Mare leva Camarão e o que mais?",
-      options: ["Apenas Camarão", "Camarão e Alho", "Camarão, Bacon e Calabresa", "Camarão e Cogumelo"],
+      type: "multiple-choice",
+      recipeName: "Gnocchi Bolognesa",
+      question: "Quais ingredientes tem o Gnocchi Bolognesa?",
+      options: ["Gnocchi, Molho Bolognesa, Alho Assado, Cebola Refogada", "Gnocchi, Bacon, Calabresa, Ovo", "Gnocchi, Camarão, Presunto, Ricota", "Gnocchi, Brócolis, Cenoura, Alho Poró"],
       correctAnswer: 0,
-      explanation: "Massa Al Mare é simples: Massa, Molho Al Mare e Camarão."
+      explanation: "Gnocchi Bolognesa tem Gnocchi, Molho Bolognesa, Alho Assado e Cebola Refogada."
     },
+    // COMPLETAR (ESCREVER)
     {
       id: 13,
+      type: "fill-in",
       recipeName: "Massa Alfredo",
-      question: "Massa Alfredo leva Molho Alfredo e o que mais?",
-      options: ["Apenas Molho Alfredo", "Molho Alfredo e Frango", "Molho Alfredo, Bacon e Calabresa", "Molho Alfredo e Camarão"],
-      correctAnswer: 0,
-      explanation: "Massa Alfredo é simples: Massa e Molho Alfredo."
+      question: "Massa Alfredo é feita com Fettuccine, Molho Alfredo, Queijo Parmesão Limpo e o que mais?",
+      correctAnswer: "Alho Assado",
+      explanation: "Alho Assado é o complemento que adiciona sabor à receita clássica.",
+      hints: ["É alho", "Começa com A", "Deve ser assado"]
     },
+    // MÚLTIPLA ESCOLHA
     {
       id: 14,
-      recipeName: "Massa com Polpettone",
-      question: "Massa com Polpettone leva Polpettone e o que mais?",
-      options: ["Apenas Polpettone", "Polpettone e Bacon", "Polpettone, Calabresa e Ovo", "Polpettone e Camarão"],
+      type: "multiple-choice",
+      recipeName: "Escalope à Milanesa",
+      question: "Quais ingredientes tem o Escalope à Milanesa?",
+      options: ["Escalope, Ovo, Farinha de Trigo, Óleo", "Escalope, Bacon, Calabresa, Queijo", "Escalope, Camarão, Presunto, Ricota", "Escalope, Brócolis, Cenoura, Cebola"],
       correctAnswer: 0,
-      explanation: "Massa com Polpettone tem apenas Polpettone como complemento."
+      explanation: "Escalope à Milanesa é empanado com Ovo e Farinha de Trigo, depois frito em óleo."
     },
+    // COMPLETAR (ESCREVER)
     {
       id: 15,
-      recipeName: "Massa Carbonara",
-      question: "Massa Carbonara leva Bacon e o que mais?",
-      options: ["Apenas Bacon", "Bacon e Calabresa", "Bacon, Ovo e Queijo", "Bacon e Camarão"],
-      correctAnswer: 2,
-      explanation: "Massa Carbonara tem Bacon como ingrediente principal, mas o molho já tem ovo e queijo."
+      type: "fill-in",
+      recipeName: "Frango Parmegiana",
+      question: "Frango Parmegiana é feito com Filé de Frango, Molho Pomodoro, Queijo Mozzarela e o que mais?",
+      correctAnswer: "Queijo Parmesão",
+      explanation: "Queijo Parmesão é o complemento que finaliza o Frango Parmegiana com sabor.",
+      hints: ["É um queijo", "Começa com Q", "É ralado"]
     },
+    // MÚLTIPLA ESCOLHA
     {
       id: 16,
-      recipeName: "Salada Caesar e Tiras de Frango",
-      question: "Salada Caesar e Tiras de Frango leva Tiras de Frango, Queijo Parmesão e o que mais?",
-      options: ["Bacon", "Apenas esses dois", "Ovo de Codorna", "Camarão"],
-      correctAnswer: 1,
-      explanation: "Salada Caesar e Tiras de Frango tem Salada, Queijo Parmesão e Tiras de Frango."
+      type: "multiple-choice",
+      recipeName: "Camarão ao Molho",
+      question: "Quais ingredientes tem o Camarão ao Molho?",
+      options: ["Camarão, Molho Branco, Alho Assado, Cebolinha", "Camarão, Bacon, Calabresa, Ovo", "Camarão, Presunto, Ricota, Tomate", "Camarão, Brócolis, Cenoura, Alho Poró"],
+      correctAnswer: 0,
+      explanation: "Camarão ao Molho é feito com Camarão, Molho Branco, Alho Assado e Cebolinha."
     },
+    // COMPLETAR (ESCREVER)
     {
       id: 17,
-      recipeName: "Salada de Massa e Filé de Frango",
-      question: "Quais ingredientes tem a Salada de Massa e Filé de Frango?",
-      options: ["Salada, Farfalle, Tomate, Cenoura, Queijo Parmesão e Filé de Frango", "Apenas Salada e Filé", "Salada, Filé e Bacon", "Salada, Filé e Camarão"],
-      correctAnswer: 0,
-      explanation: "Salada de Massa e Filé de Frango tem todos esses ingredientes listados."
+      type: "fill-in",
+      recipeName: "Pizza Margherita",
+      question: "Pizza Margherita é feita com Massa de Pizza, Molho Pomodoro, Queijo Mozzarela e o que mais?",
+      correctAnswer: "Manjericão",
+      explanation: "Manjericão fresco é o complemento que finaliza a Pizza Margherita com sabor italiano.",
+      hints: ["É uma erva", "Começa com M", "É fresco"]
     },
+    // MÚLTIPLA ESCOLHA
     {
       id: 18,
-      recipeName: "Spaghetti Bolognesa e Bacon",
-      question: "Spaghetti Bolognesa e Bacon leva Calabresa, Cogumelo, Cenoura, Alho Assado, Cebola Refogada e o que mais?",
-      options: ["Bacon", "Apenas esses", "Ovo de Codorna", "Camarão"],
+      type: "multiple-choice",
+      recipeName: "Pizza Calabresa",
+      question: "Quais ingredientes tem a Pizza Calabresa?",
+      options: ["Massa, Molho Pomodoro, Calabresa, Queijo Mozzarela", "Massa, Bacon, Presunto, Queijo", "Massa, Camarão, Ricota, Tomate", "Massa, Brócolis, Cenoura, Cebola"],
       correctAnswer: 0,
-      explanation: "Bacon é o ingrediente que completa o Spaghetti Bolognesa e Bacon."
+      explanation: "Pizza Calabresa tem Massa, Molho Pomodoro, Calabresa e Queijo Mozzarela."
     },
+    // COMPLETAR (ESCREVER)
     {
       id: 19,
-      recipeName: "Fettuccine ao Molho Queijos",
-      question: "Fettuccine ao Molho Queijos leva Queijo Parmesão, Alho Assado, Cebola, Molho Queijos e o que mais?",
-      options: ["Cogumelo Trufado, Milho e Calabresa", "Apenas esses", "Bacon e Presunto", "Camarão e Ricota"],
-      correctAnswer: 0,
-      explanation: "Cogumelo Trufado, Milho e Calabresa complementam a Fettuccine ao Molho Queijos."
+      type: "fill-in",
+      recipeName: "Risotto de Frango",
+      question: "Risotto de Frango é feito com Arroz, Caldo de Carne, Cebola, Vinho Branco e o que mais?",
+      correctAnswer: "Frango",
+      explanation: "Frango é o ingrediente principal que dá sabor e proteína ao risotto.",
+      hints: ["É uma proteína", "Começa com F", "É a proteína principal"]
     },
+    // MÚLTIPLA ESCOLHA
     {
       id: 20,
-      recipeName: "Gnocchi Bolognesa Clássico",
-      question: "Gnocchi Bolognesa Clássico leva Gnocchi, Molho Bolognesa e o que mais?",
-      options: ["Alho Assado e Cebola Refogada", "Apenas Gnocchi e Molho", "Bacon e Calabresa", "Camarão e Cogumelo"],
+      type: "multiple-choice",
+      recipeName: "Tilápia Grelhada",
+      question: "Quais ingredientes tem a Tilápia Grelhada?",
+      options: ["Tilápia, Azeite, Limão, Sal e Pimenta", "Tilápia, Bacon, Calabresa, Queijo", "Tilápia, Camarão, Presunto, Ricota", "Tilápia, Brócolis, Cenoura, Cebola"],
       correctAnswer: 0,
-      explanation: "Alho Assado e Cebola Refogada complementam o Gnocchi Bolognesa Clássico."
-    },
-    {
-      id: 21,
-      recipeName: "Farfalle ao Molho Branco, Presunto e Alho Poró",
-      question: "Farfalle ao Molho Branco, Presunto e Alho Poró leva Alho Poró, Alho Assado, Cebola, Ovo de Codorna, Presunto e o que mais?",
-      options: ["Bacon", "Apenas esses", "Queijo Mozzarella Ralada", "Camarão"],
-      correctAnswer: 2,
-      explanation: "Queijo Mozzarella Ralada é o ingrediente que completa a receita."
-    },
-    {
-      id: 22,
-      recipeName: "Penne ao Pomodoro, Manjericão",
-      question: "Penne ao Pomodoro, Manjericão leva Queijo Parmesão, Alho Assado, Cebola, Manjericão, Tomate em Cubos e o que mais?",
-      options: ["Bacon", "Apenas esses", "Calabresa", "Camarão"],
-      correctAnswer: 1,
-      explanation: "Penne ao Pomodoro, Manjericão tem esses ingredientes listados."
-    },
-    {
-      id: 23,
-      recipeName: "Pizza Alho Poró e Gorgonzola",
-      question: "Pizza Alho Poró e Gorgonzola leva Mozzarella Parmesão, Alho Poró, Cebola, Gorgonzola e o que mais?",
-      options: ["Bacon", "Apenas esses", "Ricota", "Camarão"],
-      correctAnswer: 2,
-      explanation: "Ricota é o ingrediente que completa a Pizza Alho Poró e Gorgonzola."
+      explanation: "Tilápia Grelhada é simples: Tilápia, Azeite, Limão, Sal e Pimenta."
     }
   ]
-};
-
-export const getRecipeQuizzes = () => {
-  return recipeQuizzes.receitas;
-};
-
-export const getRandomRecipeQuizzes = (count = 10) => {
-  const quizzes = [...recipeQuizzes.receitas];
-  const shuffled = quizzes.sort(() => Math.random() - 0.5);
-  return shuffled.slice(0, count);
 };
