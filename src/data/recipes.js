@@ -228,13 +228,12 @@ export const recipes = [
     id: 23,
     name: "Spaghetti Bolognesa e Bacon",
     ingredients: [
-      { quantity: "1 pegada", item: "Calabresa" },
-      { quantity: "1 pegada", item: "Cogumelo" },
-      { quantity: "1 pegada", item: "Cenoura" },
       { quantity: "1 pegada", item: "Alho Assado" },
-      { quantity: "1 pegada", item: "Cebola Refogada Bagaço" },
+      { quantity: "1 pegada", item: "Cebola Refogada" },
+      { quantity: "1 pegada", item: "Bacon Assado" },
+      { quantity: "1 pegada", item: "Cenoura" },
+      { quantity: "1 pegada", item: "Milho Verde" },
       { quantity: "200g", item: "Spaghetti" },
-      { quantity: "1 pegada", item: "Bacon" },
       { quantity: "2 conchas", item: "Molho Bolognesa" }
     ]
   },
