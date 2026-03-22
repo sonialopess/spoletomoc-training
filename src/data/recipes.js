@@ -62,7 +62,7 @@ export const recipes = [
     ingredients: [
       { quantity: "200gr", item: "Fettuccine" },
       { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
-      { quantity: "1x", item: "Queijo Gorgonzola" },
+      { quantity: "2x", item: "Queijo Gorgonzola" },
       { quantity: "2x", item: "Molho de Queijos" },
       { quantity: "1 unidade", item: "Carne/Frango Parmegiana" }
     ]
@@ -85,6 +85,8 @@ export const recipes = [
       { quantity: "1x", item: "Cebola" },
       { quantity: "1x", item: "Alho" },
       { quantity: "1x", item: "Bacon" },
+      { quantity: "1x", item: "ovo" },
+      { quantity: "1x", item: "mussarela" },
       { quantity: "2x", item: "Molho Bolognesa" }
     ]
   },
