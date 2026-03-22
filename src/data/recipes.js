@@ -48,90 +48,89 @@ export const recipes = [
       { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
       { quantity: "2 pegadas", item: "Alho" },
       { quantity: "4 polvilhadas", item: "Orégano" },
-      { quantity: "2 unid / 1 unidade", item: "Carne ou Frango Parmegiana" },
-      { quantity: "2 conchas", item: "Molho Pomodoro" }
+      { quantity: "1 unidade", item: "Carne/Frango Parmegiana" },
+      { quantity: "2 conchas", item: "Molho Marinara" }
     ]
   },
   {
     id: 6,
-    name: "Fettuccine Marinara e Milanesa",
+    name: "Fettuccine Gorgonzola e Parmegiana",
     ingredients: [
       { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
-      { quantity: "1 pegada", item: "Alho" },
-      { quantity: "4 polvilhadas", item: "Orégano" },
-      { quantity: "2 unid / 1 unidade", item: "Carne ou Frango Milanesa" },
-      { quantity: "2 conchas", item: "Molho Pomodoro" }
+      { quantity: "1 pegada", item: "Queijo Gorgonzola" },
+      { quantity: "1 unidade", item: "Carne/Frango Parmegiana" }
     ]
   },
   {
     id: 7,
-    name: "Fettuccine Marinara com Parmegiana",
+    name: "Fettuccine Alfredo com Cogumelo",
     ingredients: [
       { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
-      { quantity: "1 pegada", item: "Alho" },
-      { quantity: "4 polvilhadas", item: "Orégano" },
-      { quantity: "1 unidade", item: "Carne ou Frango Parmegiana" },
-      { quantity: "2 conchas", item: "Molho Pomodoro" }
+      { quantity: "1 pegada", item: "Cogumelo Trufado" },
+      { quantity: "2 conchas", item: "Molho Alfredo" }
     ]
   },
   {
     id: 8,
-    name: "Fettuccine Gorgonzola e Parmegiana",
-    ingredients: [
-      { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
-      { quantity: "2 pegadas", item: "Queijo Gorgonzola" },
-      { quantity: "2 unid / 1 unidade", item: "Carne ou Frango Parmegiana" },
-      { quantity: "2 conchas", item: "Molho de Queijo" }
-    ]
-  },
-  {
-    id: 9,
-    name: "Fettuccine Gorgonzola e Milanesa",
-    ingredients: [
-      { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
-      { quantity: "2 pegadas", item: "Queijo Gorgonzola" },
-      { quantity: "2 unid / 1 unidade", item: "Carne ou Frango Milanesa" },
-      { quantity: "2 conchas", item: "Molho de Queijo" }
-    ]
-  },
-  {
-    id: 10,
-    name: "Fettuccine Alfredo e Escalope",
-    ingredients: [
-      { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
-      { quantity: "3 unidades", item: "Escalope de Carne" },
-      { quantity: "1 pacote", item: "Molho Alfredo" }
-    ]
-  },
-  {
-    id: 11,
-    name: "Penne Frango e Bacon",
-    ingredients: [
-      { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
-      { quantity: "1 pegada", item: "Bacon" },
-      { quantity: "3 pegadas", item: "Frango Desfiado" },
-      { quantity: "1 pegada", item: "Tomate em Cubos" },
-      { quantity: "2 conchas", item: "Molho de Queijos" }
-    ]
-  },
-  {
-    id: 12,
     name: "Penne Bolognesa e Bacon",
     ingredients: [
-      { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
+      { quantity: "1 pegada", item: "Cebola" },
       { quantity: "1 pegada", item: "Alho" },
       { quantity: "1 pegada", item: "Bacon" },
-      { quantity: "1 pegada", item: "Cebola" },
-      { quantity: "1 pegada", item: "Muçarela" },
-      { quantity: "1 pegada", item: "Ovo de Codorna" },
+      { quantity: "200g", item: "Penne" },
       { quantity: "2 conchas", item: "Molho Bolognesa" }
     ]
   },
   {
-    id: 13,
-    name: "Spaghetti ao Pomodoro e Escalope",
+    id: 9,
+    name: "Penne Frango e Bacon",
+    ingredients: [
+      { quantity: "1 pegada", item: "Bacon" },
+      { quantity: "1 pegada", item: "Frango Desfiado" },
+      { quantity: "1 pegada", item: "Tomate em Cubos" },
+      { quantity: "1 pegada", item: "Calabresa" },
+      { quantity: "200g", item: "Penne" },
+      { quantity: "2 conchas", item: "Molho Pomodoro" }
+    ]
+  },
+  {
+    id: 10,
+    name: "Penne Frango Assado",
+    ingredients: [
+      { quantity: "1 pegada", item: "Frango Assado" },
+      { quantity: "1 pegada", item: "Tomate em Cubos" },
+      { quantity: "1 pegada", item: "Alho Poró" },
+      { quantity: "200g", item: "Penne" },
+      { quantity: "2 conchas", item: "Molho Pomodoro" }
+    ]
+  },
+  {
+    id: 11,
+    name: "Spaghetti Carbonara",
+    ingredients: [
+      { quantity: "1 pegada", item: "Bacon" },
+      { quantity: "2 pegadas", item: "Ovo" },
+      { quantity: "1 pegada", item: "Queijo Parmesão" },
+      { quantity: "200g", item: "Spaghetti" },
+      { quantity: "2 conchas", item: "Molho Carbonara" }
+    ]
+  },
+  {
+    id: 12,
+    name: "Spaghetti com Filé de Frango",
     ingredients: [
       { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
+      { quantity: "1 unidade", item: "Alho Poró" },
+      { quantity: "2 pegadas", item: "Calabresa" },
+      { quantity: "1 unidade", item: "Filé de Frango" },
+      { quantity: "200g", item: "Spaghetti" },
+      { quantity: "2 conchas", item: "Molho Marinara" }
+    ]
+  },
+  {
+    id: 13,
+    name: "Rigatoni Parmegiana",
+    ingredients: [
       { quantity: "3 unidades", item: "Escalope de Carne" },
       { quantity: "2 conchas", item: "Molho Pomodoro" }
     ]
@@ -144,61 +143,56 @@ export const recipes = [
       { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
       { quantity: "1 unidade", item: "Alho Poró" },
       { quantity: "2 pegadas", item: "Calabresa" },
-      { quantity: "1 pegada", item: "Brócolis" },
       { quantity: "1 unidade", item: "Filé de Frango" },
-      { quantity: "1 concha", item: "Molho Queijos" },
-      { quantity: "1 concha", item: "Molho Branco" }
+      { quantity: "200g", item: "Spaghetti" },
+      { quantity: "2 conchas", item: "Molho Marinara" }
     ]
   },
   {
     id: 16,
-    name: "Spaghetti Pomodoro e Filé de Frango",
+    name: "Farfalle Frango e Cogumelo",
     ingredients: [
-      { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
-      { quantity: "1 pegada", item: "Manjericão" },
-      { quantity: "2 pegadas", item: "Ricota" },
-      { quantity: "2 pegadas", item: "Bacon" },
-      { quantity: "1 unidade", item: "Filé de Frango" },
-      { quantity: "2 conchas", item: "Molho Pomodoro" }
+      { quantity: "1 pegada", item: "Frango" },
+      { quantity: "1 pegada", item: "Cogumelo Trufado" },
+      { quantity: "200g", item: "Farfalle" },
+      { quantity: "2 conchas", item: "Molho Branco" }
     ]
   },
   {
     id: 17,
-    name: "Massa Al Mare",
+    name: "Rigatoni Bolognesa",
     ingredients: [
-      { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
-      { quantity: "200g", item: "Massa escolhida" },
-      { quantity: "1 pacote", item: "Camarão" },
-      { quantity: "1 pacote", item: "Molho Al Mare" }
+      { quantity: "200g", item: "Rigatoni" },
+      { quantity: "2 conchas", item: "Molho Bolognesa" }
     ]
   },
   {
     id: 18,
-    name: "Massa Alfredo",
+    name: "Frango Parmegiana",
     ingredients: [
-      { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
-      { quantity: "200g", item: "Massa escolhida" },
-      { quantity: "1 pacote", item: "Molho Alfredo" }
+      { quantity: "1 unidade", item: "Frango" },
+      { quantity: "2 conchas", item: "Molho Pomodoro" },
+      { quantity: "1 pegada", item: "Queijo Mozzarela" },
+      { quantity: "1 pegada", item: "Queijo Parmesão" }
     ]
   },
   {
     id: 19,
-    name: "Massa com Polpettone",
+    name: "Camarão ao Molho",
     ingredients: [
-      { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
-      { quantity: "200g", item: "Massa escolhida" },
-      { quantity: "1 unidade", item: "Polpettone" },
-      { quantity: "1 pacote", item: "Molho Pomodoro ou Bolognesa" }
+      { quantity: "1 pegada", item: "Alho Assado" },
+      { quantity: "1 pegada", item: "Cebolinha" },
+      { quantity: "1 unidade", item: "Camarão" }
     ]
   },
   {
     id: 20,
-    name: "Massa Carbonara",
+    name: "Tilápia Grelhada",
     ingredients: [
-      { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
-      { quantity: "200g", item: "Massa escolhida" },
-      { quantity: "2 pegadas", item: "Bacon" },
-      { quantity: "1 pacote", item: "Molho Carbonara" }
+      { quantity: "1 unidade", item: "Tilápia" },
+      { quantity: "1 fio", item: "Azeite" },
+      { quantity: "1 pegada", item: "Limão" },
+      { quantity: "1 pegada", item: "Sal e Pimenta" }
     ]
   },
   {
@@ -228,35 +222,31 @@ export const recipes = [
     id: 23,
     name: "Spaghetti Bolognesa e Bacon",
     ingredients: [
+      { quantity: "200g", item: "Spaghetti" },
       { quantity: "1 pegada", item: "Alho Assado" },
       { quantity: "1 pegada", item: "Cebola Refogada" },
       { quantity: "1 pegada", item: "Bacon Assado" },
       { quantity: "1 pegada", item: "Cenoura" },
       { quantity: "1 pegada", item: "Milho Verde" },
-      { quantity: "200g", item: "Spaghetti" },
       { quantity: "2 conchas", item: "Molho Bolognesa" }
     ]
   },
   {
     id: 24,
-    name: "Fettuccine ao Molho Queijos",
+    name: "Fettuccine ao Molho de Queijos, Calabresa e Cogumelo",
     ingredients: [
-      { quantity: "1 pegada", item: "Queijo Parmesão Limpo" },
-      { quantity: "1 pegada", item: "Alho Assado" },
-      { quantity: "1 pegada", item: "Cebola Refogada Bagaço" },
       { quantity: "200g", item: "Fettuccine" },
-      { quantity: "2 conchas", item: "Molho Queijos" },
+      { quantity: "1 pegada", item: "Alho Assado" },
+      { quantity: "1 pegada", item: "Cebola Refogada" },
       { quantity: "1 pegada", item: "Cogumelo Trufado" },
-      { quantity: "1 pegada", item: "Milho" },
-      { quantity: "2 pegadas", item: "Calabresa" }
+      { quantity: "2 pegadas", item: "Calabresa Assada" },
+      { quantity: "2 conchas", item: "Molho de Queijos" }
     ]
   },
   {
     id: 25,
     name: "Gnocchi Bolognesa Clássico",
     ingredients: [
-      { quantity: "1 pegada", item: "Alho Assado" },
-      { quantity: "1 pegada", item: "Cebola Refogada Bagaço" },
       { quantity: "1 unidade", item: "Gnocchi" },
       { quantity: "2 conchas", item: "Molho Bolognesa" }
     ]
@@ -265,14 +255,12 @@ export const recipes = [
     id: 26,
     name: "Farfalle ao Molho Branco, Presunto e Alho Poró",
     ingredients: [
-      { quantity: "1 pegada", item: "Alho Poró" },
       { quantity: "1 pegada", item: "Alho Assado" },
-      { quantity: "1 pegada", item: "Cebola Refogada Bagaço" },
-      { quantity: "200g", item: "Farfalle" },
+      { quantity: "1 pegada", item: "Alho Poró" },
       { quantity: "2 pegadas", item: "Ovo de Codorna" },
-      { quantity: "2 conchas", item: "Molho Branco" },
-      { quantity: "1 pegada", item: "Presunto" },
-      { quantity: "1 pegada", item: "Queijo Mozzarella Ralada" }
+      { quantity: "1 pegada", item: "Presunto Cozido" },
+      { quantity: "1 pegada", item: "Cebola Refogada" },
+      { quantity: "2 conchas", item: "Molho Branco" }
     ]
   },
   {
@@ -292,12 +280,21 @@ export const recipes = [
     id: 28,
     name: "Pizza Alho Poró e Gorgonzola",
     ingredients: [
-      { quantity: "1 unidade", item: "Pizza" },
-      { quantity: "1 pegada", item: "Mozzarella Parmesão" },
+      { quantity: "1 unidade", item: "Pizza Mozzarella" },
       { quantity: "2 pegadas", item: "Alho Poró" },
-      { quantity: "1 pegada", item: "Cebola" },
+      { quantity: "1 pegada", item: "Cebola Refogada" },
       { quantity: "1 pegada", item: "Gorgonzola" },
-      { quantity: "1 pegada", item: "Ricota" }
+      { quantity: "1 pegada", item: "Ricota" },
+      { quantity: "1 pegada", item: "Parmesão" }
+    ]
+  },
+  {
+    id: 29,
+    name: "Pizza Bacon com Requeijão",
+    ingredients: [
+      { quantity: "1 unidade", item: "Pizza Mozzarella" },
+      { quantity: "2 pegadas", item: "Bacon Assado" },
+      { quantity: "1 pegada", item: "Requeijão Cremoso" }
     ]
   }
 ];
