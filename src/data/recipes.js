@@ -136,16 +136,7 @@ export const recipes = [
       { quantity: "2 conchas", item: "Molho Pomodoro" }
     ]
   },
-  {
-    id: 14,
-    name: "Spaghetti com Tiras de Frango",
-    ingredients: [
-      { quantity: "1 fio / 1 pincelada", item: "Azeite ou Pesto" },
-      { quantity: "1 pegada", item: "Mix de Ervas" },
-      { quantity: "1 pacote", item: "Tiras de Frango" },
-      { quantity: "2 conchas", item: "Molho Queijos" }
-    ]
-  },
+
   {
     id: 15,
     name: "Spaghetti com Filé de Frango",
@@ -214,7 +205,7 @@ export const recipes = [
     id: 21,
     name: "Salada Caesar e Tiras de Frango",
     ingredients: [
-      { quantity: "2 pacotes", item: "Salada" },
+      { quantity: "90g", item: "Salada" },
       { quantity: "1 pacote", item: "Queijo Parmesão" },
       { quantity: "1 pacote", item: "Tiras de Frango" },
       { quantity: "60g", item: "Molho Caesar" }
@@ -224,7 +215,7 @@ export const recipes = [
     id: 22,
     name: "Salada de Massa e Filé de Frango",
     ingredients: [
-      { quantity: "2 pacotes", item: "Salada" },
+      { quantity: "90g", item: "Salada" },
       { quantity: "100g", item: "Farfalle Bambini" },
       { quantity: "2 pegadas", item: "Tomate em Cubos" },
       { quantity: "2 pegadas", item: "Cenoura" },
