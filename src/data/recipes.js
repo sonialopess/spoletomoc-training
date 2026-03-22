@@ -231,5 +231,61 @@ export const recipes = [
       { quantity: "2x", item: "Bacon Assado" },
       { quantity: "1x", item: "Requeijão Cremoso" }
     ]
+  },
+  {
+    id: 30,
+    name: "PIZZA CALABRESA",
+    ingredients: [
+      { quantity: "1x", item: "Pizza Calabresa" },
+      { quantity: "3x", item: "Cebola Refogada" }
+    ]
+  },
+  {
+    id: 31,
+    name: "PIZZA CALABRESA COM REQUEIJÃO",
+    ingredients: [
+      { quantity: "1x", item: "Pizza Calabresa" },
+      { quantity: "1x", item: "Requeijão" }
+    ]
+  },
+  {
+    id: 32,
+    name: "PIZZA FRANGO COM REQUEIJÃO",
+    ingredients: [
+      { quantity: "1x", item: "Pizza Mussarela" },
+      { quantity: "3x", item: "Frango Desfiado" },
+      { quantity: "1x", item: "Requeijão" }
+    ]
+  },
+  {
+    id: 33,
+    name: "PIZZA QUATRO QUEIJOS",
+    ingredients: [
+      { quantity: "1x", item: "Pizza Mussarela" },
+      { quantity: "2x", item: "Queijo Gorgonzola" },
+      { quantity: "2x", item: "Parmesão" },
+      { quantity: "1x", item: "Requeijão" }
+    ]
+  },
+  {
+    id: 34,
+    name: "PIZZA PORTUGUESA",
+    ingredients: [
+      { quantity: "1x", item: "Pizza Mussarela" },
+      { quantity: "3x", item: "Presunto" },
+      { quantity: "3x", item: "Tomate" },
+      { quantity: "2x", item: "Azeitona" },
+      { quantity: "2x", item: "Cebola" },
+      { quantity: "3x", item: "Ovo de Codorna" }
+    ]
+  },
+  {
+    id: 35,
+    name: "PIZZA MARGHERITA",
+    ingredients: [
+      { quantity: "1x", item: "Pizza Mussarela" },
+      { quantity: "3x", item: "Tomate" },
+      { quantity: "1x", item: "Parmesão" }
+    ]
   }
 ];
